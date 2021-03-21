@@ -1,0 +1,20 @@
+
+#divCadastro {
+    width: 200px;
+    height: 5px;
+    font: 14px;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+
+
+#tabela {
+    margin-left: 300px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+#btnExcluir {
+    margin-top: 10px;
+}
+
