@@ -18,3 +18,6 @@
     margin-top: 10px;
 }
 
+label {
+    font-weight: bold;
+}
