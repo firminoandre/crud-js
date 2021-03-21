@@ -17,25 +17,31 @@ function cadCarros(chassi, nome, categoria, ano){
     var colCategoria = linha.insertCell(3);
     var colAno = linha.insertCell(4);
     
-
-
+    if(document.getElementById("chassi").value == ''){
+        alert("Preencha o campo do chassi")
+    }
+    if(document.getElementById("nome").value == ''){
+        alert("Preencha o campo do nome")
+    }
+    if(document.getElementById("categoria").value == ''){
+        alert("Preencha a categoria")
+    }
+    if(document.getElementById("ano").value == ''){
+        alert("Preencha o campo do ano")
+    }
     //inserindo campos do formulario na coluna
+    
     colID.innerHTML = qntsLinhas;
     colChassi.innerHTML = chassi;
     colNome.innerHTML = nome;
     colCategoria.innerHTML = categoria;
     colAno.innerHTML = ano;
     
-
     preencheInput();   
     limparForm(); 
-    criaBtn();
 }
 
-function criaBtn(){
-    
-    innerHTML = `<button type="button" class="btn btn-primary">Primary</button>`;
-}
+
 
 // função para limpar formulário após cadastro
 function limparForm(){
@@ -45,8 +51,6 @@ function limparForm(){
     document.getElementById("categoria").value = '';
     document.getElementById("ano").value = '';
 }
-
-
 
 function alterar(chassi, nome, categoria, ano){
     //atribuir valores desses parametros para as linhas da tabela do HTML
